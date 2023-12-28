@@ -22,12 +22,12 @@ Want to collaborate?
 We are open to all forms of collaboration.It can be in the form of adopting our app to your location, or research. If you want to collaborate just drop in an email at mushfiqur.my@gmail.com
 
 Partners and Supporters:
-IDEA UKM (universiti Kebangsaan Malaysia)
+IDEA UKM (Universiti Kebangsaan Malaysia)
 
 Contributors:
 Prof. Ir. Dr. Rosdiadee Nordin (Project Supervisor), UKM
 Zulaikha (Data Collection and Public Outreach), UKM
-Mushfiqur Rahman Saad (Full scale hardware and software developer), UKM (Postgrad Student)
+Mushfiqur Rahman Saad (Full scale hardware and software developer), UKM (Postgrad Student)..........
 
 To test out our version visit:
 www.ml2.live
