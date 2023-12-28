@@ -1,0 +1,63 @@
+import os
+import cv2
+import base64
+import json
+import pandas as pd
+import plotly.express as px
+from flask import Flask, render_template, request, jsonify
+from roboflow import Roboflow
+
+app = Flask(__name__)
+
+roboflow = Roboflow("username", "api-key", "your-dataset-id")
+
+inference_count = 0
+total_images = 0
+inference_data = {}
+
+@app.route('/', methods=['GET', 'POST'])
+def upload_image():
+    global inference_count, total_images, inference_data
+
+    if request.method == 'POST':
+        # Get image from POST request
+        img_base64 = request.form['image'].split(',')[1]
+        nparr = np.frombuffer(base64.b64decode(img_base64), np.uint8)
+        img_np = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+
+        # Save image locally for inference
+        cv2.imwrite('temp.jpg', img_np)
+
+        # Perform inference
+        response = roboflow.detect_image('temp.jpg')
+
+        # Process inference results
+        for result in response['predictions']:
+            class_name = result['bbox']['class']
+            if class_name in inference_data:
+                inference_data[class_name] += 1
+            else:
+                inference_data[class_name] = 1
+
+        # Extract geotag data
+        geotag_data = {}
+        try:
+            exif_data = piexif.load(img_np)
+            lat = exif_data['GPS'][piexif.GPSIFD.GPSLatitude]
+            lon = exif_data['GPS'][piexif.GPSIFD.GPSLongitude]
+            geotag_data = {"lat": lat, "lon": lon}
+        except (AttributeError, KeyError, TypeError):
+            pass
+
+        # Increment counters
+        inference_count += 1
+        total_images += 1
+
+        # Render results page
+        return render_template('results.html', data=inference_data, count=inference_count, total=total_images, geotag_data=geotag_data)
+
+    return render_template('upload.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
