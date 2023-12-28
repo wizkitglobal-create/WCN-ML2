@@ -17,6 +17,7 @@ pip install plotly
 pip install Pillow
 pip install piexif
 
+
 Want to collaborate?
 We are open to all forms of collaboration.It can be in the form of adopting our app to your location, or research. If you want to collaborate just drop in an email at mushfiqur.my@gmail.com
 
