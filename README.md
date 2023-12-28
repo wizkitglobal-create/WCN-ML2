@@ -1,6 +1,6 @@
 This project is intended to make Machine learning to Mitigate litter easier and open-source. 
 
-THis is a work in progress project and the code will be updated and added to regulalrly
+This is a work in progress project and the code will be updated and added to regulalrly
 
 Goal of the WebApp
 .
