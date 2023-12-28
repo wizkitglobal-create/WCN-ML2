@@ -1,0 +1,5 @@
+pip install Flask
+pip install roboflow
+pip install plotly
+pip install Pillow
+pip install piexif
