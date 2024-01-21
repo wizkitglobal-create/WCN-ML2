@@ -17,7 +17,7 @@ import urllib.parse
 
 
 # Initialize Roboflow model
-rf = Roboflow(api_key="4mk8lPHkiCrauugzg3jb")
+rf = Roboflow(api_key="")
 project = rf.workspace().project("ml2-wcn-ukm")
 model = project.version(16).model
 
@@ -439,7 +439,7 @@ def update_bubble_map(_):
 
     bubble_map.update_layout(
         mapbox=dict(
-            accesstoken='pk.eyJ1Ijoid2NuLW1sMiIsImEiOiJjbHJscXEwd3Mwb3R5MnFrNGppamN5end1In0.h-v-dm4qidmGX0G1kWHB-g',  # Replace 'Your_mapbox_token' with your actual Mapbox access token
+            accesstoken=,  # Replace 'Your_mapbox_token' with your actual Mapbox access token
             center=dict(lat=center_lat, lon=center_lon),  # this line controls the center
             zoom=zoom,  # this line controls zoom
             style='mapbox://styles/wcn-ml2/clrlr2ibo003f01qy7m3gf163'  # Replace with your actual style URL
