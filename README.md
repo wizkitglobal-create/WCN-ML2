@@ -14,7 +14,7 @@ Our mission is to leverage the power of machine learning and community-driven ef
 
 - **Sponsorship**: We are incredibly grateful for the generous sponsorship from **IDEA_UKM**. Their support plays a crucial role in driving our project forward and making a tangible impact in the field of environmental tech.
 
-- **Software Development**: The seamless experience of our app and website is the result of the exceptional software full-stack development work by **Mushfiqur Rahman Saad**. His expertise and dedication have been instrumental in bringing ML2 to life.
+- **Software Development**: The seamless experience of our app and website is the result of the exceptional software full-stack development work by **Mushfiqur Rahman Saad**. 
 
 - **Partnerships**: Collaboration is key to our success. We are honored to partner with **International Islamic University Malaysia (IIUM)** and **Impactlution**. These organizations bring invaluable knowledge, resources, and support to our initiative.
 
