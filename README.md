@@ -1,6 +1,6 @@
 # Machine Learning for Mitigating Litter (ML2) - GitHub Readme
 
-The source python files which are directly deployed on Render as a python applicationc can be found here: https://github.com/wizkitglobal-create/ml2webapp2
+The source python files which are directly deployed on Render as a python application can be found here: https://github.com/wizkitglobal-create/ml2webapp2
 
 ## Welcome to ML2 - The World's First Completely Open-Source Dataset for Litter
 
